@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function sayWelcome(){
+            var x = document.getElementById("txtName");
+            var y = document.getElementById("msg");
+            y.innerHTML = y.innerHTML + " "+ x.value;
+        }
+    </script>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td><label for="">Enter Your Name</label>
+        <td><input id="txtName" placeholder="Type Your Name" type="text"/></td>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button onclick="sayWelcome()">Greet</button>
+        </td>
+    </tr>
+</table>
+<h1 id="msg">Welcome </h1>
+</body>
+</html>
