@@ -1,0 +1,331 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 function Employee(id,name,salary)\{\par
+this.id = id;\par
+this.name = name;\par
+this.salary = salary;\par
+\}\par
+undefined\par
+Employee.prototype;\par
+Employee \{\}constructor: Employee(id,name,salary)__proto__: Object\par
+Employee.prototype.bonus=9000;\par
+9000\par
+Employee.prototype;\par
+Employee \{bonus: 9000\}bonus: 9000constructor: Employee(id,name,salary)__proto__: Object\par
+Employee.prototype.hra=function()\{\par
+return this.salary * 0.30;\par
+\};\par
+()\{\par
+return this.salary * 0.30;\par
+\}\par
+Employee.prototype.totalSalary=function()\{\par
+return this.salary + this.hra() + this.bonus;\par
+\};\par
+()\{\par
+return this.salary + this.hra() + this.bonus;\par
+\}\par
+Employee.prototype;\par
+Employee \{bonus: 9000\}bonus: 9000constructor: Employee(id,name,salary)hra: ()totalSalary: ()__proto__: Object\par
+Employee.prototype.printReport=function()\{\par
+console.log("Id ",this.id);\par
+console.log("Name ",this.name);\par
+console.log("Salary ",this.salary);\par
+console.log("Bonus ",this.bonus);\par
+console.log("HRA ",this.hra());\par
+console.log("Total Salary ",this.totalSalary());\par
+\}\par
+()\{\par
+console.log("Id ",this.id);\par
+console.log("Name ",this.name);\par
+console.log("Salary ",this.salary);\par
+console.log("Bonus ",this.bonus);\par
+console.log("HRA ",this.hra());\par
+console.log("Total Salary\'85\par
+var ram = new Employee(1001,"Ram",9090);\par
+undefined\par
+ram;\par
+Employee \{id: 1001, name: "Ram", salary: 9090\}\par
+typeof ram;\par
+"object"\par
+ram instanceof Employee;\par
+true\par
+ram.printReport();\par
+VM491:3 Id  1001\par
+VM491:4 Name  Ram\par
+VM491:5 Salary  9090\par
+VM491:6 Bonus  9000\par
+VM491:7 HRA  2727\par
+VM491:8 Total Salary  20817\par
+undefined\par
+var shyam = new Employee(1002,"Shyam",8888);\par
+undefined\par
+shyam.printReport();\par
+VM491:3 Id  1002\par
+VM491:4 Name  Shyam\par
+VM491:5 Salary  8888\par
+VM491:6 Bonus  9000\par
+VM491:7 HRA  2666.4\par
+VM491:8 Total Salary  20554.4\par
+undefined\par
+ram.pf = 9090;\par
+9090\par
+ram;\par
+Employee \{id: 1001, name: "Ram", salary: 9090, pf: 9090\}\par
+shyam;\par
+Employee \{id: 1002, name: "Shyam", salary: 8888\}\par
+Employee.prototype.ta = 9090;\par
+9090\par
+ram.ta;\par
+9090\par
+shyam.ta;\par
+9090\par
+ram.pf;\par
+9090\par
+shyam.pf;\par
+undefined\par
+shyam;\par
+Employee \{id: 1002, name: "Shyam", salary: 8888\}\par
+delete shyam.salary;\par
+true\par
+shyam.salary;\par
+undefined\par
+function print(x)\{\par
+for(int i = 1 ; i<=10 ; i++)\{\par
+x(i);\par
+\}\par
+\}\par
+VM1363:3 Uncaught SyntaxError: Unexpected identifier(\'85)InjectedScript._evaluateOn @ VM66:875InjectedScript._evaluateAndWrap @ VM66:808InjectedScript.evaluate @ VM66:664\par
+function print(x)\{\par
+for(var i = 1 ; i<=10 ; i++)\{\par
+x(i);\par
+\}\par
+\}\par
+undefined\par
+function evenOdd(y)\{\par
+if(y%2==0)\{\par
+console.log("Even No ",y);\par
+\}\par
+else\{\par
+console.log("Odd NO ",y);\par
+\}\par
+\}\par
+undefined\par
+evenOdd(10);\par
+VM1433:4 Even No  10\par
+undefined\par
+evenOdd(3);\par
+VM1433:7 Odd NO  3\par
+undefined\par
+print(evenOdd);\par
+VM1433:7 Odd NO  1\par
+VM1433:4 Even No  2\par
+VM1433:7 Odd NO  3\par
+VM1433:4 Even No  4\par
+VM1433:7 Odd NO  5\par
+VM1433:4 Even No  6\par
+VM1433:7 Odd NO  7\par
+VM1433:4 Even No  8\par
+VM1433:7 Odd NO  9\par
+VM1433:4 Even No  10\par
+undefined\par
+function print(start,end,x)\{\par
+for(var i = start ; i<=end ; i++)\{\par
+x(i);\par
+\}\par
+\}\par
+undefined\par
+print(10,15,evenOdd);\par
+VM1433:4 Even No  10\par
+VM1433:7 Odd NO  11\par
+VM1433:4 Even No  12\par
+VM1433:7 Odd NO  13\par
+VM1433:4 Even No  14\par
+VM1433:7 Odd NO  15\par
+undefined\par
+print(10,15,function(i)\{\par
+if(i%2==0)\{\par
+console.log("Even ",i);\par
+\}\par
+else\{\par
+console.log("Odd",i);\par
+\}\par
+\});\par
+VM1591:4 Even  10\par
+VM1591:7 Odd 11\par
+VM1591:4 Even  12\par
+VM1591:7 Odd 13\par
+VM1591:4 Even  14\par
+VM1591:7 Odd 15\par
+undefined\par
+function add()\{\par
+\par
+\}\par
+undefined\par
+console.dir(add);\par
+VM1749:2 add()arguments: nullcaller: nulllength: 0name: "add"prototype: add__proto__: ()<function scope>\par
+undefined\par
+function add()\{\par
+var sum = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+sum = sum + arguments[i];\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add();\par
+0\par
+add(10);\par
+10\par
+add(10,20);\par
+30\par
+add(10,20,30);\par
+60\par
+add(10,20,30,40);\par
+100\par
+add("10","20");\par
+"01020"\par
+function add()\{\par
+var sum = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+sum = sum + parseInt(arguments[i]);\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add(10,"20",30);\par
+60\par
+add("10","20");\par
+30\par
+add("10","ten");\par
+NaN\par
+parseInt("10");\par
+10\par
+parseInt("ten");\par
+NaN\par
+parseInt("amit");\par
+NaN\par
+isNaN(parseInt("amit"));\par
+true\par
+isNaN(parseInt("10"));\par
+false\par
+function add()\{\par
+var sum = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+sum = sum + isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]);\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add("ten",100,200);\par
+0\par
+function add()\{\par
+var sum = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add("ten",100,200);\par
+300\par
+function firstNo()\{\par
+return 1000;\par
+\}\par
+undefined\par
+add(firstNo,2000);\par
+2000\par
+function add()\{\par
+var sum = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+if(typeof arguments[i]==="function")\{\par
+arguments[i]=arguments[i]();\par
+\}\par
+sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add(firstNo,2000);\par
+3000\par
+add(firstNo,2000,"hello","10",10);\par
+3020\par
+function add()\{\par
+var sum = 0;\par
+var temp = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+if(arguments[i] instanceof Array)\{\par
+for(var j = 0 ; j<arguments[i].length; j++)\{\par
+temp = temp + (isNaN(parseInt(arguments[i][j]))?0:parseInt(arguments[i][j]));\par
+\}\par
+arguments[i]=temp;\par
+\}\par
+\par
+if(typeof arguments[i]==="function")\{\par
+arguments[i]=arguments[i]();\par
+\}\par
+\par
+sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add([1,2,3],5);\par
+11\par
+add([1,2,3],5,firstNo,"Hello",[1,1]);\par
+1019\par
+add(["one","two","three"],5,firstNo,"Hello",[1,1]);\par
+1007\par
+add(["one","two","three"],5,firstNo,"Hello",["1","1"]);\par
+1007\par
+function add()\{\par
+var sum = 0;\par
+var temp = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+if(arguments[i] instanceof Array)\{\par
+temp=0;\par
+for(var j = 0 ; j<arguments[i].length; j++)\{\par
+temp = temp + (isNaN(parseInt(arguments[i][j]))?0:parseInt(arguments[i][j]));\par
+\}\par
+arguments[i]=temp;\par
+\}\par
+\par
+if(typeof arguments[i]==="function")\{\par
+arguments[i]=arguments[i]();\par
+\}\par
+\par
+sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));\par
+\}\par
+return sum;\par
+\}\par
+undefined\par
+add([1,2,3],5,firstNo,"Hello",[1,1]);\par
+1013\par
+add([firstNo,function()\{return 200;\},[10,20]);\par
+VM2382:2 Uncaught SyntaxError: Unexpected token )(\'85)InjectedScript._evaluateOn @ VM66:875InjectedScript._evaluateAndWrap @ VM66:808InjectedScript.evaluate @ VM66:664\par
+add([firstNo,function()\{return 200;\}],[10,20]);\par
+30\par
+function add()\{\par
+var sum = 0;\par
+var temp = 0;\par
+for(var i = 0 ; i<arguments.length; i++)\{\par
+if(arguments[i] instanceof Array)\{\par
+temp=0;\par
+for(var j = 0 ; j<arguments[i].length; j++)\{\par
+if(typeof arguments[i][j]==="function")\{\par
+arguments[i][j] = arguments[i][j]();\par
+\}\par
+temp = temp + (isNaN(parseInt(arguments[i][j]))?0:parseInt(arguments[i][j]));\par
+\}\par
+arguments[i]=temp;\par
+\}\par
+\par
+if(typeof arguments[i]==="function")\{\par
+arguments[i]=arguments[i]();\par
+\}\par
+\par
+sum = sum + (isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));\par
+\}\par
+return sum;\par
+\}\par
+}
+ 
