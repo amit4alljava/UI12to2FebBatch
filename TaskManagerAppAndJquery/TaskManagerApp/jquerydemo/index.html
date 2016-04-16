@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>hello1</td>
+        <td>ok1</td>
+    </tr>
+    <tr>
+        <td>hello2</td>
+        <td>ok2</td>
+    </tr>
+    <tr>
+        <td>hello3</td>
+        <td>ok3</td>
+    </tr>
+    <tr>
+        <td>hello4</td>
+        <td>ok4</td>
+    </tr>
+</table>
+<button onclick="$('table tr:eq(2) td:eq(1)') .css('color','red')">Table Edit</button>
+<input type="text"/><input type="text"/><input type="text"/><input type="text"/><input type="text"/>
+<button onclick="$('input[type=text]').val('')">Clear</button>
+<div>
+    <div>
+        <p>Hello Div</p>
+    </div>
+</div>
+
+<button onclick="$('div div p').slideToggle(1000)">Show/hide</button>
+<p onclick="$(this).slideToggle(1000)">Hello</p>
+
+<p class="mystyle">hello1</p>
+
+<p id="p1">hello2</p>
+
+<p class="mystyle">hello3</p>
+
+<p>hello4</p>
+
+<p>hello5</p>
+</body>
+</html>

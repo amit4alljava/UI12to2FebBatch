@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/custom.css"/>
+    <script src="../../js/model.js"></script>
+    <script src="../../js/controller.js"></script>
+</head>
+<body>
+<fieldset>
+    <legend>TaskManager App</legend>
+    <table >
+        <tr>
+            <td><label for="taskName">Name</label></td>
+            <td><input type="text" id="taskName"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><label for="desc">Desc</label></td>
+            <td><textarea id="desc" rows="5" cols="20"></textarea></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <table>
+                    <tr>
+                        <td>
+                            <button id="add">Add</button>
+                        </td>
+                        <td>
+                            <button id="delete">Delete</button>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="search">
+                        </td>
+                        <td>
+                            <button id="save">Save</button>
+                        </td>
+                        <td>
+                            <button id="load">Load</button>
+                        </td>
+                        <td>
+                            <button id="clear">Clear</button>
+                        </td>
+                        <td>
+                            <button id="loadserver">Load From Server</button>
+                        </td>
+                        <td>
+                            <button id="sortByName">Sort By Name</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<span id="completeCount"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="notcompleteCount"></span>
+<fieldset>
+    <legend>TaskList</legend>
+    <ul id="taskList">
+
+    </ul>
+</fieldset>
+</body>
+</html>
